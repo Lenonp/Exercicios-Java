@@ -18,14 +18,14 @@ public class exercicio04 {
             numerosAleatorio[i] = numero;
         }
 
-        System.out.println("Numeros Aleatorio. ");
+        System.out.print("\nNumeros Aleatorio. ");
         for (int numero : numerosAleatorio) {
-            System.out.println(numero + " ");
+            System.out.print(numero + " ");
         }
-
-        System.out.println("Sucessores dos numeros Aleatorios. ");
+    
+        System.out.print("\nSucessores dos numeros Aleatorios. ");
         for (int numero : numerosAleatorio) {
-            System.out.println((numero + 1) + " ");
+            System.out.print((numero + 1) + " ");
         }
 
     }
