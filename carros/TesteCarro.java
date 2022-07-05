@@ -11,13 +11,5 @@ public class TesteCarro {
         van.capCombustivel = 100;
         van.consumoCombustivel = 0.2;
 
-        System.out.println(van.marca);
-        System.out.println(van.modelo);
-
-        //van.exibirAutonomia();
-
-        double autonomia = van.obterAutonomia();
-        System.out.println("A autonomia do carro é: " + autonomia);
-
     }
 }

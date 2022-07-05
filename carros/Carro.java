@@ -13,13 +13,12 @@ public class Carro {
     double capCombustivel;
     double consumoCombustivel;
 
-    /* O Metodo Void apenas exibe sem retorno e vazio
-
+    // *** Definindo Metodos Basicos - Carro Faz. ***
+    
     void exibirAutonomia(){
         System.out.println("A autonomia do carro é: " + capCombustivel * consumoCombustivel + "km");
     }
 
-    */
 
     double obterAutonomia() {
 
