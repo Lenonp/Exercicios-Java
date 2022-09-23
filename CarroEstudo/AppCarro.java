@@ -11,7 +11,9 @@ public class AppCarro {
         car.setCombustivel("Gasolina");
         car.setMotor(2.0);
         car.setQntPorta(5);
+        car.setVelocidade(15);
         
         car.imprimir();
+        car.acelerar();
     }
 }

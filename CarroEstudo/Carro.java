@@ -9,6 +9,7 @@ public class Carro {
     private String combustivel;
     private double motor;
     private int qntPorta;
+    private int velocidade;
 
     public String getMarca() {
         return marca;
@@ -52,6 +53,13 @@ public class Carro {
     public void setQntPorta(int qntPorta) {
         this.qntPorta = qntPorta;
     }
+    
+    public int getVelocidade() {
+        return velocidade;
+    }
+    public void setVelocidade(int velocidade) {
+        this.velocidade = velocidade;
+    }
 
     public void imprimir(){
         System.out.println("Carro da Marca: " + marca);
@@ -61,6 +69,27 @@ public class Carro {
         System.out.println("Tipo de Combustivel: " + combustivel);
         System.out.println("Potencia do Motor: " + motor);
         System.out.println("Quantidade de porta: " + qntPorta);
+    }
+
+    private boolean estaAcelerando = false;
+
+    public void acelerar(){
+
+        estaAcelerando = true;
+
+        if(velocidade >= 115)
+            System.out.println(" O Carro esta em Alta Velocidade " + velocidade + "Km/h" );
+
+        else if ( velocidade >= 70 && velocidade <= 110)
+            System.out.println(" O Caro esta em velocidade Permitida " + velocidade + "Km/h");
+
+        else if ( velocidade >= 40 && velocidade <= 69)
+            System.out.println(" O Caro esta em baixa velocidade " + velocidade + "Km/h");
+        
+        else if ( velocidade >= 1 && velocidade <= 39)
+            System.out.println(" O carro esta Saindo ou Parando " + velocidade + "Km/h");
+        else
+            System.out.println("O carro esta Parado");
     }
     
 }
