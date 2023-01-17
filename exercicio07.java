@@ -30,12 +30,11 @@ class Operacao {
         return (b * b) - (4 * a * c);
     }
 
-
-    public void raizes (double valordelta){
+    public void raizes(double valordelta) {
         double x1 = (-b + Math.sqrt(valordelta)) / (2 * a);
         double x2 = (-b - Math.sqrt(valordelta)) / (2 * a);
         System.out.println("O valor X1 é:" + " " + x1);
-        System.out.println("O valor X2 é:"  + " " + x2);
+        System.out.println("O valor X2 é:" + " " + x2);
     }
 }
 
@@ -46,11 +45,12 @@ public class exercicio07 {
         double valordelta = objeto.delta();
         System.out.println("O valor de Delta é: " + " " + valordelta);
 
-        if (valordelta<0) 
-            System.out.print("O Delta é menor que zero");
+        if (valordelta < 0)
+            System.out.print("Delta é menor que zero");
 
-        else objeto.raizes(valordelta);
-            System.out.println();  
+        else
+            objeto.raizes(valordelta);
+        System.out.println();
 
     }
 
