@@ -46,7 +46,7 @@ public class exercicio07 {
         System.out.println("O valor de Delta é: " + " " + valordelta);
 
         if (valordelta < 0)
-            System.out.print("Delta é menor que zero");
+            System.out.print("O Delta é menor que zero");
 
         else
             objeto.raizes(valordelta);
